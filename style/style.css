@@ -1,0 +1,354 @@
+@charset "UTF=8";
+
+/* Reset 시작 */
+
+* {
+    color: #333;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+/*Reset 끝*/
+
+/*Guide line 시작*/
+
+div#wrap {
+    border: 1px solid #aaa;
+}
+
+/*div#nav table {border: 1px solid #000;}*/
+
+/*div#three {border: 1px solid #000;}*/
+
+/*
+div#threeBbs {border: 1px solid #000;}
+
+div#threeGal {border: 1px solid #000;}
+
+div#threeBan {border: 1px solid #000;}
+*/
+
+/*Guide line 종료*/
+
+body {
+    background-color: #fff;
+}
+
+div#wrap {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/*header 시작*/
+
+header {
+    display: flex;
+}
+
+div#topLogo {
+    border-right: 1px solid #aaa;
+    width: 230px;
+    height: 100px;
+}
+
+div#topLogo img {
+    margin: 30px 30px 30px 15px;
+}
+
+nav#mainMenu {
+    width: 1000px;
+    height: 100px;
+}
+
+nav#mainMenu ul {
+    width: 800px;
+    height: 100px;
+    border-collapse: collapse;
+    position: relative;
+    left: 250px;
+    z-index: 2;
+}
+
+nav#mainMenu ul li {
+    width: 174px;
+    height: 40px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    float: left;
+    margin-top: 60px;
+    text-align: center;
+    line-height: 40px;
+	font-size: 18px;
+}
+
+nav#mainMenu ul li:first-child ~ li {
+    border-left: none;
+}
+
+
+nav#mainMenu ul li a {
+    color: #3cb149;
+}
+
+nav#mainMenu ul li:hover {
+    background-color: #3cb149;
+}
+
+nav#mainMenu ul li:hover a {
+    color: #fff;
+}
+
+/*header 종료*/
+
+
+/*nav#subMenu 시작*/
+
+nav#extraSubMenu {
+	height: 130px;
+    list-style: none;
+	background-color: #3cb149;
+	position: relative;
+	z-index: 2;
+}
+
+nav#extraSubMenu>div#subMenuArea {
+	/* border: 2px solid #0f0; */
+	width: 700px;
+	position: absolute;
+	right: 18px;
+}
+
+nav#extraSubMenu>div#subMenuArea::after {
+    content: " ";
+	clear: both;
+	display: block;
+}
+
+nav#extraSubMenu ul.subMenu {
+	float: left;
+}
+
+nav#extraSubMenu ul.subMenu a {
+    width: 174px;
+    height: 40px;
+	color: #fff;
+	font-size: 18px;
+    /* border: 1px solid #000; */
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+
+nav#extraSubMenu ul.subMenu a:hover {
+	background-color: #fff;
+	color: #3cb149;
+}
+
+/*nav#subMenu 종료*/
+
+
+/*main 시작*/
+
+div#slide {
+	background-image: url(../images/IQMVap30Zw08BKxUgEgzVS6ofsvU.jpg);
+	height: 300px;
+	z-index: 1;
+}
+
+div#three {
+    height: 200px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+div#threeBbs,
+div#threeGal,
+div#threeBan {
+    width: 400px;
+    border: 1px solid #aaa;
+}
+
+div#threeBbs,
+div#threeGal {
+    border-right: none;
+}
+
+div#threeBbs {
+    border-left: none;
+}
+
+div#threeBan {
+    border-right: none;
+}
+
+div#threeBbs button {
+    font-size: 17px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    padding: 5px;
+    position: relative;
+    left: 30px;
+    top: 11px;
+}
+
+div#threeBbs table {
+    border: 1px solid #aaa;
+    padding: 10px;
+    line-height: 25px;
+    margin: 10px 10px 0 20px;
+}
+
+div#threeGal button {
+    font-size: 17px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    padding: 5px;
+    position: relative;
+    left: 30px;
+    top: 11px;
+}
+
+div#galPhoto {
+    width: 351px;
+    height: 132px;
+    border: 1px solid #aaa;
+    margin: 10px 10px 0 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div#threeGal img {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+div#threeGal a:first-child img {
+	margin-left: 12px;
+}
+
+div#threeGal a:last-child img {
+	margin-right: 12px;
+}
+
+div#threeBan img {
+    margin: 55px 20px 20px 50px;
+    cursor: pointer;
+}
+
+
+/*main 종료*/
+
+/*footer 시작*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+div#bottomLogo {
+    border-right: 1px solid #aaa;
+    width: 200px;
+    height: 100px;
+}
+
+div#bottomLogo img {
+    position: relative;
+    left: -25px;
+    top: 30px;
+}
+
+div#copy p {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+div#family {
+    border-left: 1px solid #aaa;
+    width: 230px;
+    height: 100px;
+}
+
+div#family select {
+    width: 200px;
+    height: 50px;
+    margin: 25px;
+    margin-left: 30px;
+    border: 1px solid #aaa;
+    outline: none;
+}
+
+/*footer 종료*/
+
+div#dark {
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 3;
+}
+
+div#modal {
+    width: 500px;
+    height: 300px;
+    background-color: #3cb149;
+    border-radius: 20px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#modal h1 {
+    color: #fff;
+    padding: 19px;
+    margin-left: 10px;
+}
+
+div#modal p {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+div#modal li {
+    color: #fff;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+div#modal button {
+    border: none;
+    color: #3cb149;
+    background-color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+
+    position: relative;
+    left: 410px;
+    top: -50px;
+}

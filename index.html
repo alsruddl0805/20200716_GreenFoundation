@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div id="wrap">
+
+        <header>
+            <div id="topLogo">
+                <a href="#">
+                    <img src="images/그린복지재단_Top.png" alt="탑로고">
+                </a>
+            </div>
+            <!--div#topLogo-->
+
+            <nav id="mainMenu">
+                    <ul>
+                        <li><a href="#">재단소개</a></li>
+                        <li><a href="#">후원하기</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">스토리</a></li>
+                    </ul>
+            </nav>
+            <!--div#nav-->
+        </header>
+
+	<nav id="extraSubMenu">
+		<div id="subMenuArea">
+		<ul class="subMenu">
+            <li><a href="#">설립취지</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">찾아오시는길</a></li>
+        </ul>
+        <ul class="subMenu">
+            <li><a href="#">국내후원</a></li>
+            <li><a href="#">국외후원</a></li>
+            <li><a href="#">맞춤후원</a></li>
+        </ul>
+        <ul class="subMenu">
+            <li><a href="#">서식자료실</a></li>
+            <li><a href="#">사진자료실</a></li>
+            <li><a href="#">후원양식</a></li>
+        </ul>
+        <ul class="subMenu">
+            <li><a href="#">웹진</a></li>
+            <li><a href="#">보고서</a></li>
+            <li><a href="#">나의 후원</a></li>
+		</ul>
+		</div> <!--div#subMenuArea-->
+	</nav>
+
+            <div id="slide">
+            </div>
+            <!--div#slide-->
+
+        <main>
+            <div id="three">
+                <div id="threeBbs">
+
+                    <button>공지사항</button>
+
+                    <table>
+                        <tr>
+                            <td><a href="#">2019년 후원할 후원자를 찾습니다</a></td>
+                            <td>2018-10-19</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">입금자를 찾습니다.</a></td>
+                            <td>2017-10-10</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">5월 런칭 이벤트 회원 모집</a></td>
+                            <td>2017-10-06</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">1+1 행사를 진행합니다.</a></td>
+                            <td>2017-09-20</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <!--div#threeBbs-->
+
+
+
+                <div id="threeGal">
+
+                    <button>갤러리</button>
+                    <div id="galPhoto">
+                        <a href="#"><img src="images/IUQIMAQMYU_2019043010170137.jpg" alt="갤1"></a>
+                        <a href="#"><img src="images/MYIcYIMAAU_20171024170801271.jpg" alt="갤2"></a>
+                        <a href="#"><img src="images/UQYUEAcEMc_20180801155144485.jpg" alt="갤3"></a>
+                    </div>
+
+                </div>
+                <!--div#threeGal-->
+
+
+
+                <div id="threeBan">
+                    <img src="images/YUIOOIWKW_20160907210523.png" alt="배너" id="modalOpen">
+                </div>
+                <!--div#threeBan-->
+
+            </div>
+            <!--div#three-->
+
+        </main>
+
+        <footer>
+            <div id="bottomLogo">
+                <a href="#"><img src="A영역_Header/그린복지재단_Bottom.png" alt="바텀로고"></a>
+            </div>
+            <!--div#bottomLogo-->
+
+            <div id="copy">
+                <p>
+                    전화번호 : (051) 709-0700 사업자등록번호 : 605-82-05242 대표자 : 김영수 <br>
+                    copyright(c) 2010 Busan Infrastructure Corporation. all rights reserved
+                </p>
+            </div>
+            <!--div#copy-->
+
+            <div id="family">
+                <select name="family">
+                    <option value="green">초록우산</option>
+                    <option value="save">세이브더칠드런</option>
+                    <option value="TIS">티아이에스교실</option>
+                </select>
+            </div>
+            <!--div#family-->
+
+        </footer>
+
+    </div>
+    <!--div#wrap-->
+
+    <div id="dark">
+        <div id="modal">
+            <h1>후원마당</h1>
+            <p>2019년 그린재단을 후원할 후원자를 찾습니다.</p>
+            <ul>
+                <li>- 후원문의 : 02-222-2222</li>
+                <li>- 후원통장 : 국민은행 1111-1111-11111</li>
+                <li>- 후원금액 : 1만원부터~</li>
+            </ul>
+            <button id="modalClose">닫기</button>
+        </div>
+        <!--div#modal-->
+
+    </div>
+    <!--#dark-->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+	</script>
+
+<script>
+        $("#modalOpen").click(function() {
+            $("#dark").show();
+        });
+        $("#modalClose").click(function() {
+            $("#dark").hide();
+        });
+    </script>
+
+	<script>
+
+		$("#mainMenu li").mouseover(function(){
+			$("#extraSubMenu").stop().slideDown();
+		});
+
+		$("#mainMenu li").mouseout(function(){
+			$("#extraSubMenu").stop().slideUp();
+		});
+
+	</script>
+
+</body>
+</html>
